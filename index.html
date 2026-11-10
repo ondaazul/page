@@ -421,7 +421,7 @@
   // Selector de idioma de entrada.
   // Hasta el lanzamiento: aparece SIEMPRE y la elección no se guarda.
   // AL LANZAR: poner true -> solo aparece en la primera visita (se recuerda el idioma y respeta ?lang= en el link).
-  window.OA_RECORDAR_IDIOMA = false;
+  window.OA_RECORDAR_IDIOMA = true;
   (function(){
     if(window.OA_RECORDAR_IDIOMA){
       var q = ["he","es","en"].indexOf(new URLSearchParams(location.search).get("lang")) > -1, s = null;
